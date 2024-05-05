@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;  
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+p{
+    font-size: 1rem; /* 13px */
+    line-height: 1.9rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* button */
+.btn {
+    padding: 1rem 1.5rem;
+    background: white
+    border: 1.5px solid rgb(6, 5, 5);
+    cursor: pointer;
+}
+
+/* title */
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: grey;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.pre-title::before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: rgb(6, 5, 5);
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+/* logo dan navbar menu */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    transition: ease-in-out;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    margin-right: 3rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 3rem;
+}
+
+.logo a {
+    color:rgb(6, 5, 5)
+}
+
+nav ul li a {
+    color: rgb(6, 5, 5);
+}
+
+/* Home section */
+#home {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.home-name {
+    font-size: 3rem;
+    font-weight: 700px;
+    margin: 0.5rem;
+    color: rgb(6, 5, 5);
+}
+
+.home-right img{
+    width: 400px;
+    margin-left: 2.3rem;
+    border-radius: 0.7rem;
+}
+
+.home-right{
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+}
+
+/* About Section */
+#about {
+    background-color: rgb(179, 224, 236);
+    padding: 6rem 0;
+}
+
+.section-title-about {
+    text-align: center;
+    margin: 1rem 0 4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/* layout */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.about {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: rgb(255, 250, 250);
+    border-radius: 0.7rem;
+}
+
+.about h4 {
+    color:rgb(6, 5, 5);
+    margin: 0.5rem 0;
+}
+
+.about p {
+    color:rgb(6, 5, 5)
+}
+
+.about-icon {
+    background-color: rgb(179, 224, 236);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+/* End of About */
+
+/* Skills & Experience */
+#skills {
+    padding: 6rem 0;
+    background: rgb(255, 250, 250);
+    margin-left: 3rem;
+    margin-right: 3rem;    
+}
+
+.section-title-skills {
+    text-align: center;
+    margin: 1rem 0 4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin-left: 3rem;
+    margin-right: 2.5rem;
+}
+
+.experience {
+    display: flex;
+    gap: 2rem;
+}
+
+.experience line {
+    padding: 0 0.7rem;
+}
+
+.experience .line div {
+    width: 2px;
+    height: 100%;
+    background: rgb(6, 5, 5);
+    position: relative;
+}
+
+.experience-info {
+    margin: 0.3rem 0;
+}
+
+.experience-date {
+    margin-bottom: 3rem;
+}
+
+.experience .line div::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: rgb(6, 5, 5);
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.skills-right {
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+/* End of Experience & Skills */
+
+/* Contact section */
+
+#contact {
+    padding: 4rem;
+    margin-bottom: 1.4rem;
+}
+
+.section-title-contact {
+    text-align: center;
+    margin: 1rem 0 4rem;
+}
+
+.contact-form div {
+    margin-bottom: 1.4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0,75rem 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgb(6, 5, 5);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid gray;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: rgb(6, 5, 5);
+    color: rgb(255, 250, 250);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: rgb(179, 224, 236);
+    color: rgb(6, 5, 5);
+}
+/* End of Contact */
+
+/* Footer */
+footer {
+    margin-bottom: 0;
+    padding: 4rem 0;
+    background-color: rgb(179, 224, 236);
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 1rem;
+}
+
+.footer-icons a {
+    margin: 0 0.5rem;
+}
+
+.footer-icons a:hover {
+    fill: rgb(6, 5, 5)k;
+}
+
+.footer-icons {
+    fill: grey;
+}
